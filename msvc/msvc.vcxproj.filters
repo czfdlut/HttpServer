@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\agreement.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\http_service.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\worker.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\helper.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\log.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\myassert.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\string_util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\thread.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\time_system.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\timer.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\maths.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\agreement.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\http_service.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\worker.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\helper.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\lock.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\log.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\macrodef.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\myassert.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\singleton.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\string_util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\thread.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\time_system.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\timer.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\type.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\socketdef.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\maths.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
