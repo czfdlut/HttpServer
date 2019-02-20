@@ -1,0 +1,9 @@
+HttpServer listen at 127.0.0.1:8888
+[tid=-1735731232][time=2019-02-20 20:45:20.811][13]
+Route Service startup. [tid=-1735731232][time=2019-02-20 20:45:20.888][90]
+HttpServer listen at 127.0.0.1:8888
+[tid=99071968][time=2019-02-20 20:47:46.305][13]
+Route Service startup. [tid=99071968][time=2019-02-20 20:47:46.306][13]
+HttpServer listen at 127.0.0.1:8888
+[tid=-1316788256][time=2019-02-20 21:32:16.799][12]
+Route Service startup. [tid=-1316788256][time=2019-02-20 21:32:16.799][13]

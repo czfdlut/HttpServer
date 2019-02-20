@@ -54,7 +54,7 @@ namespace sys_util {
 		va_start(argp, msg);
 		char buf[MAX_SHOWMESSAGE_LENGTH] = {0};
 
-        int nCount = _vsnprintf_s(buf, MAX_SHOWMESSAGE_LENGTH, msg, argp);
+        int nCount = tvsnprintf(buf, MAX_SHOWMESSAGE_LENGTH, msg, argp);
 		va_end(argp);
 
 #ifdef _WIN32

@@ -12,8 +12,39 @@
 #include "log.h"
 #include "string_util.h"
 #include "agreement.h"
+#include "http_request.h"
+#include "messages.h"
 
+using namespace http_helper;
 extern volatile sig_atomic_t g_bMainLoop;
+
+void test_curl()
+{
+    http_global_init();
+
+    struct http_handler* tf_http = http_init(1 << 21);//2MB
+    if (tf_http == NULL) {
+        cout << "http init faild.";
+        return;
+    }
+    
+    http_request_init(tf_http);
+    
+    string ret_data;
+    string svr_uri = "https://www.xt-kp.com/base/doAction";
+    //string post_data = "{\"sign\":\"8ca803159c7e9a723c31d91571a88625\",\"ver\":\"1.0\",\"command\":\"1001\",\"token\":\"\",\"param\":{\"appid\":\"35385640507\",\"secret\":\"a14c4ab485a60833fe09064e27ae013e\"},\"timestamp\":\"1550130142439\",\"openid\":\"\"}";
+    string post_data = Messages::CreateMessage();
+    int http_status = http_post_request(tf_http, svr_uri, post_data, 2000, 2000, ret_data);
+
+    cout << "RequestToken"
+        << "uri=" << svr_uri
+        << "post=" << post_data
+        << "ret_data=" << ret_data;
+
+    http_cleanup(tf_http);
+
+    http_global_cleanup();
+}
 
 bool	Worker::init(EVHttpServer* pServer)
 {
@@ -140,5 +171,9 @@ void  Worker::processRequest(struct evhttp_request* req)
 	
 	evhttp_send_reply(req, http_status, "OK", evb);
 	evbuffer_free(evb);
+
+    // for test
+    test_curl();
+
 }
 
