@@ -15,7 +15,7 @@
 #include "http_request.h"
 #include "messages.h"
 
-using namespace http_helper;
+using namespace ns_http_helper;
 extern volatile sig_atomic_t g_bMainLoop;
 
 void test_curl()

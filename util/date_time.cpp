@@ -6,7 +6,7 @@
 
 using namespace std;
 
-namespace cloud_search {
+namespace ns_date_time {
 
     double get_current_sec()
     {
@@ -79,5 +79,5 @@ namespace cloud_search {
     }
 
 
-} //< namespace cloud_search
+} //< namespace ns_date_time
 

@@ -1,7 +1,7 @@
 
 #include "http_request.h"
 
-namespace http_helper{
+namespace ns_http_helper{
 
 //#define __F_TESING__
 
@@ -162,5 +162,5 @@ int http_post_request(http_handler* http, std::string& uri, std::string& request
     }
 }
 
-}; // namespace http_helper
+}; // namespace ns_http_helper
 

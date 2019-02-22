@@ -2,10 +2,8 @@
  *
  * @file        date_time.h
  * @brief
- * @author      iHuHoo.W (ihuhoo.w@gmail.com)
- * @date        2014-04-03 11:46:22
- *
- *     Copyright (C) 2014, iHuHoo.W, all rights reserved.
+ * @author      czfdlut@163.com
+ * @date        2017/06
  *
  \******************************************************************************/
 #ifndef __DATE_TIME_H__
@@ -20,7 +18,7 @@
 using std::map;
 using std::string;
 
-namespace cloud_search {
+namespace ns_date_time {
 
     class DateTime {
     public:
@@ -46,7 +44,7 @@ namespace cloud_search {
     };
 
 
-} //< namespace cloud_search
+} //< ns_date_time
 
 #endif /* __DATE_TIME_H__ */
 

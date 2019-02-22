@@ -14,7 +14,7 @@ using std::cin;
 using std::endl;
 
 
-namespace http_helper {
+namespace ns_http_helper {
 
 struct http_handler{
     CURL *curl;
@@ -40,7 +40,7 @@ int http_request(http_handler *http, const char *url, const std::string &post_da
 
 int http_post_request(http_handler* http, std::string& uri, std::string& request, int to, int cto, std::string& ret_data);
 
-}; // namespace http_helper
+}; // namespace ns_http_helper
 
 #endif // __HTTP_REQUEST_H
 
